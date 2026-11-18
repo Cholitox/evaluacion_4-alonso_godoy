@@ -1,6 +1,10 @@
 
 import useGitHub from '../hooks/useGitHub'
 
+function quitarPuntos(texto: string) {
+  return texto.replace(/\./g, '')
+}
+
 function Proyectos() {
   const { repos, loading, error } = useGitHub()
 
@@ -16,7 +20,7 @@ function Proyectos() {
             <h2 className="proyecto__titulo">Portafolio web</h2>
             <p>
               Mi primer portafolio creado con HTML y CSS
-              para mostrar mis habilidades y proyectos.
+              para mostrar mis habilidades y proyectos
             </p>
             <a
               className="proyecto__enlace"
@@ -34,7 +38,7 @@ function Proyectos() {
             <h2 className="proyecto__titulo">Mini portafolio</h2>
             <p>
               Portafolio desarrollado con React y TypeScript
-              para practicar el desarrollo web.
+              para practicar el desarrollo web
             </p>
             <a
               className="proyecto__enlace"
@@ -52,7 +56,7 @@ function Proyectos() {
             <h2 className="proyecto__titulo">Panel de Ferias Araucanía</h2>
             <p>
               Panel de información sobre las ferias libres
-              y el clima de La Araucanía.
+              y el clima de La Araucanía
             </p>
             <a
               className="proyecto__enlace"
@@ -71,13 +75,13 @@ function Proyectos() {
 
         {loading && (
           <p role="status" aria-live="polite">
-            Cargando repositorios...
+            Cargando repositorios
           </p>
         )}
 
         {error && (
           <p role="alert">
-            Error: {error}
+            Error: {quitarPuntos(error)}
           </p>
         )}
 
@@ -87,12 +91,12 @@ function Proyectos() {
               <li className="proyecto" key={repo.id}>
                 <article>
                   <h3 className="proyecto__titulo">
-                    {repo.name}
+                    {quitarPuntos(repo.name)}
                   </h3>
 
-                  <p>
-                    {repo.description && <p>{repo.description}</p>}
-                  </p>
+                  {repo.description && (
+                    <p>{quitarPuntos(repo.description)}</p>
+                  )}
 
                   <a
                     className="proyecto__enlace"
