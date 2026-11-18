@@ -7,7 +7,7 @@ function Contacto() {
       </h1>
 
       <p>
-        Si quieres contactarme, puedes hacerlo mediante mi correo.
+        Si quieres contactarme, puedes hacerlo mediante mi correo
       </p>
 
       <a href="mailto:alonsogodoy@gmail.com" className="boton">

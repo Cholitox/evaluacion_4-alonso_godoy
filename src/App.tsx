@@ -19,7 +19,7 @@ function Inicio() {
 
         <p>
           Me interesa el desarrollo de software, la tecnología
-          y aprender nuevas herramientas para crear soluciones.
+          y aprender nuevas herramientas para crear soluciones
         </p>
 
         <Link to="/proyectos" className="boton">

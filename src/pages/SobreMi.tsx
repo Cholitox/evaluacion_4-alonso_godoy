@@ -13,13 +13,13 @@ function SobreMi() {
           <p>
             Soy estudiante de bachiller en ciencias y humanidades,
             Actualmente estoy aprendiendo programación,
-            desarrollo web y bases de datos.
+            desarrollo web y bases de datos
           </p>
 
           <p>
             Me interesa seguir mejorando mis conocimientos
             y desarrollar proyectos que me permitan aplicar
-            lo aprendido durante mi carrera.
+            lo aprendido durante mi carrera
           </p>
         </section>
 
